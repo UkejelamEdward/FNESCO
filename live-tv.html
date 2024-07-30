@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>NGO Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">NGO ORG.</h1>
+        <nav>
+            <ul>
+                <li><a class="headlist" href="index.html">Home</a></li>
+                <li><a class="headlist" href="live-tv.html">Live TV</a></li>
+                <li><a class="headlist" href="past-programs.html">Past Programs</a></li>
+                <li><a class="headlist" href="services.html">Services</a></li>
+                <li><a class="headlist" href="about.html">About</a></li>
+                <li><a class="headlist" href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="headlist dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Signup</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<br><br><br><br>
+<main>
+    <section class="live-stream">
+        <h2>Watch Live</h2>
+        <div class="video-player">
+            <!-- Embed the live stream player -->
+            <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="current-event">
+            <h3>Currently Streaming: Event Title</h3>
+            <p>Description of the current event. Details about the speaker or host.</p>
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <h2>Upcoming Live Events</h2>
+        <ul>
+            <li>    
+                <h3>Event Title 1</h3>
+                <p>Date and Time</p>
+                <p>Brief description of the event.</p>
+            </li>
+            <li>
+                <h3>Event Title 2</h3>
+                <p>Date and Time</p>
+                <p>Brief description of the event.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="donate">
+        <h2>Support Our Cause</h2>
+        <p>Your donations help us continue our mission. Please consider making a contribution.</p>
+        <button onclick="window.location.href='donate.php'">Donate Now</button>
+    </section>
+</main>
+
+<footer>
+    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    <p>&copy; 2024 NGO ORG. All rights reserved.</p>
+    <p>Created by <a href="#" style="color:orangered; font-weight:bold; text-decoration:none;">Techverse Global</a></p>
+</footer>
+        
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
+        

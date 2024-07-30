@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>NGO Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">NGO ORG.</h1>
+        <nav>
+            <ul>
+                <li><a class="headlist" href="index.html">Home</a></li>
+                <li><a class="headlist" href="live-tv.html">Live TV</a></li>
+                <li><a class="headlist" href="past-programs.html">Past Programs</a></li>
+                <li><a class="headlist" href="services.html">Services</a></li>
+                <li><a class="headlist" href="about.html">About</a></li>
+                <li><a class="headlist" href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="headlist dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Signup</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="signup-form">
+            <h2>Signup</h2>
+            <p>Join us and become a part of our community. Please fill in the form below to create an account.</p>
+            <form action="signup-process.php" method="post">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+                
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                
+                <label for="phone">Phone Number (optional):</label>
+                <input type="text" id="phone" name="phone">
+                
+                <label for="address">Address (optional):</label>
+                <input type="text" id="address" name="address">
+                
+                <label for="user_type">I am a:</label>
+                <select id="user_type" name="user_type">
+                    <option value="volunteer">Volunteer</option>
+                    <option value="donor">Donor</option>
+                    <option value="member">Member</option>
+                </select>
+                
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the <a href="terms.php">Terms of Service</a> and <a href="privacy.php">Privacy Policy</a>
+                </label>
+                
+                <div class="captcha">
+                    <!-- Include captcha here, such as reCAPTCHA -->
+                </div>
+                
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </section>
+    </main>
+
+
+
+
+
+
+<footer>
+    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    <p>&copy; 2024 NGO ORG. All rights reserved.</p>
+    <p>Created by <a href="#" style="color:orangered; font-weight:bold; text-decoration:none;">Techverse Global</a></p>
+</footer>
+        
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
+        

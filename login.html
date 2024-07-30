@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>NGO Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">NGO ORG.</h1>
+        <nav>
+            <ul>
+                <li><a class="headlist" href="index.html">Home</a></li>
+                <li><a class="headlist" href="live-tv.html">Live TV</a></li>
+                <li><a class="headlist" href="past-programs.html">Past Programs</a></li>
+                <li><a class="headlist" href="services.html">Services</a></li>
+                <li><a class="headlist" href="about.html">About</a></li>
+                <li><a class="headlist" href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="headlist dropbtn">Account</a>
+                    <div class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="signup.html">Signup</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login-form">
+        <h2>Login</h2>
+        <form action="login-process.php" method="post">
+            <label for="email">Email or Username:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+            
+            <button type="submit">Login</button>
+        </form> <br>
+        
+        <div class="login-links">
+            <a href="forgot-password.php">Forgot Password?</a>
+            <span>|</span>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </section>
+    <br><br><br>
+<footer>
+    <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    <p>&copy; 2024 NGO ORG. All rights reserved.</p>
+    <p>Created by <a href="#" style="color:orangered; font-weight:bold; text-decoration:none;">Techverse Global</a></p>
+</footer>
+        
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
+        
