@@ -55,15 +55,20 @@ nav ul li a {
     padding: 10px 15px;
 }
 
-nav ul li a:hover,.headlist.active {
-    background-color: #2b2b2b;
+nav ul li a:hover {
+    border: none;
+    border-bottom: 2px solid lightgreen;
+}
+.headlist.active {
+    background-color: darkblue;
     border-radius: 5px;
+    box-shadow: 4px 3px rgb(52, 35, 35);
 }
 
 /* Dropdown styles */
 .dropdown-content {
-    display: none;
-    position: absolute;
+    display: block  ;
+    position:absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -97,6 +102,7 @@ nav ul li a.active {
 
 /* INDEX PAGE */
 main {
+    margin: 0px;
     padding: 0px;
     background-image: url("assets/images/download.jpg");
 }
@@ -127,8 +133,8 @@ main {
 }
 
 .hero button {
-    background-color: #ffc107;
-    color: #333;
+    background-color: green;
+    color: white;
     text-align: center;
     align-self: center;
     border: none;
@@ -138,6 +144,8 @@ main {
     padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
 }
 
 .hero button:hover {
@@ -158,12 +166,12 @@ section a {
     color: #007bff;
 }
 .programs {
-    background-color: #ffc107;
+    /* background-color: #ffc107; */
     display: grid;
     /* grid-template-columns: auto; */
     grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
     font-size: clamp(17px, 50%, 20px);
-    grid-auto-rows: 200px;
+    grid-auto-rows: auto;
     grid-template-rows: 100px;
     gap:20px;
     column-gap: 50px;
@@ -221,7 +229,7 @@ section a {
     margin-left: 0px;
     grid-auto-rows: 200px;
     grid-template-rows: 100px;
-    background-color: darkblue;
+    /* background-color: darkblue; */
     gap: 10px;
     justify-content: center;
 }
@@ -236,7 +244,7 @@ section a {
     display: block;
     grid-column-start: 1;
     grid-column-end: -1;
-    background-color: #333;
+    /* background-color: #333; */
 }
 .partimg {
     border-radius: 5px;
@@ -264,74 +272,6 @@ footer a {
     margin: 0 5px;
 }
 
-
-
-
-
-
-
-/* CONTACT PAGE STYLE */
-#contact {
-    background-color: #717070;
-}
-
-.boxes {
-    height: 70%;
-    width: 50%;
-    /* float:left; */
-    margin-left: 48%;
-    margin-top: 4%;
-    /* background-color: burlywood; */
-    padding: 1%;
-  }
-  .box1 { 
-  height: 45px;
-  width: 70%;
-  float: left;
-  margin: 10px;
-  border-radius: 10px;
-  }
-  .box2 {
-    /* display: block; */
-    border-radius: 10px;
-    height: 45px;
-    width: 70%;
-    float: left;
-    margin-left: 4%;
-    margin: 10px;
-  }
-  .box3 {
-    border-radius: 10px;
-    height: 45px;
-    width: 70%;
-    margin: 10px;
-    /* display: block; */
-    /* margin-top: 15px; */
-  }
-  .box4 {
-    width: 70%;
-    margin: 10px;
-    border-radius: 10px;
-  }
-  .box5 {
-  
-    margin-left: 18%;
-    height: 45px;
-    width: 200px;
-    border-radius: 10px;
-    font-size: 150%;
-    margin-top: 10px;
-    /* color: aquamarine; */
-    /* position: absolute; */
-    background-color: rgb(17, 17, 78);
-    color: rgb(255, 132, 87);
-    font-weight: bolder;
-  }
-  .box5:hover {
-    font-weight: bolder;
-    color:white;
-    background-color: rgb(255, 132, 87);  
-  }
 /* LOGIN PAGE############################################### */
 .login {
     height: 700px;
@@ -356,21 +296,23 @@ main {
 .upcoming-events{
     display: grid;
     /* background-color: #0056b3; */
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(300px, 500px));
-    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 300px));
+    column-gap: 5%;
+    /* grid-template-columns: 300px 300px 300px; */
+    /* grid-auto-rows: auto; */
     /* grid-template-rows: 100px; */
 }
-.upcoming-events ul li {
-    border: 2px solid red;
+.upcoming-events ul li div {
+    margin-bottom: 2%;
+    border: 2px solid red; 
 }
 .upcoming-events h2 {
-    border: 2px solid darkred;
-    /* grid-column-start: 1; */
-    /* grid-column-end: -1; */
-
+    /* border: 2px solid darkred;  */
+    /* width: fit-content ; */
+    grid-column-start: 1;
+    grid-column-end: -1;
 }
-.live-stream, .upcoming-events, .interaction, .donate, .related-content {
+.live-stream, .interaction, .donate, .related-content {
     margin-bottom: 40px;
 }
 
@@ -386,7 +328,7 @@ main {
 
 section h2 {
     font-size: 28px;
-    margin-bottom: 20px;
+    color: green;
 }
 
 section ul {
@@ -394,9 +336,6 @@ section ul {
     padding: 0;
 }
 
-section ul li {
-    margin-bottom: 20px;
-}
 
 section a {
     color: #007bff;
@@ -406,7 +345,6 @@ section a {
 section a:hover {
     text-decoration: underline;
 }
-
 .donate button {
     background-color: #ffc107;
     color: #333;
@@ -430,7 +368,7 @@ section a:hover {
     text-align: center;
     margin-bottom: 40px;
     background-image: url("../images/worldinstrument.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;   
     background-size: cover;
     background-position: left;
 }
@@ -545,10 +483,10 @@ section a:hover {
     text-align: center;
     height: 300px;
     background-color: #0056b3;
-    /* background-image: url("../images/human.jpg"); */
+    background-image: url("../images/human.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: fixed; */
+    background-position: fixed;
 }
 .service-list .service img {
     width: 100%;
@@ -561,9 +499,9 @@ section a:hover {
     justify-content: space-around;
     margin-bottom: 40px;
 }
-.testimonials {
-    background-color: #ffc107;
-}
+/* .testimonials { */
+    /* background-color: #ffc107; */
+/* } */
 /* SERVICE TESTIMONIAL DIVS */
 .carousel-container {
     margin-right: minmax(0%, 25%);
@@ -691,9 +629,76 @@ section a:hover {
 
 /*contact############################################## */
 
+/* CONTACT PAGE STYLE */
+.boxes {
+    height: fit-content;
+    /* background-color: burlywood; */
+    padding: 1%;
+    text-align: center;
+  }
+  .box1 { 
+  height: 45px;
+  width: 70%;
+  margin: 10px;
+  border-radius: 10px;
+  }
+  .box2 {
+    /* display: block; */
+    border-radius: 10px;
+    height: 45px;
+    width: 70%;
+    margin-left: 4%;
+    margin: 10px;
+  }
+  .box3 {
+    border-radius: 10px;
+    height: 45px;
+    width: 70%;
+    margin: 10px;
+  }
+  .box4 {
+    width: 70%;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  .box5 {
+    height: 45px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 150%;
+    /* color: aquamarine; */
+    /* position: absolute; */
+    background-color: rgb(17, 17, 78);
+    color: rgb(255, 132, 87);
+    font-weight: bolder;
+  }
+  .box5:hover {
+    font-weight: bolder;
+    color:white;
+    background-color: rgb(255, 132, 87);  
+  }
 .contact-info, .contact-form, .social-media, .faqs {
     margin-bottom: 40px;
 }
+.contact {
+    /* border: 2px solid darkred; */
+    margin-top: 5%;
+    display: grid;
+    /* background-color: rebeccapurple; */
+    /* grid-template-columns: 300px 300px; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+    /* grid-template-rows: 300px; */
+    gap: 10px;
+}
+#locator {
+    margin-bottom: 20%;
+
+}
+/* .conbox{ */
+    /* width: 600px; */
+    /* border: 1.5px solid red; */
+    /* background-color: green; */
+/* } */
 
 .contact-info h2, .contact-form h2, .social-media h2, .faqs h2 {
     font-size: 24px;
@@ -791,9 +796,18 @@ section a:hover {
     font-size: 24px;
     margin-bottom: 10px;
 }
+.values ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    gap: 70px;
+    grid-auto-rows: 100px;
+    justify-content: center;
+}
 .values ul li {
-    margin-top: 2%;
-    display: inline;
+    /* margin-left: 10%; */
+    /* display: inline; */
+    font-size: clamp(15px, 20px, 25px);
+    border: 1px solid brown;
 }
 
 .team {
@@ -804,7 +818,7 @@ section a:hover {
     text-align: center;
 }
 .team h2 {
-    /* color: brown; */
+    color: brown;
     /* background-color: #0056b3; */
     /* display: block; */
 }
