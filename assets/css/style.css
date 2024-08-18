@@ -23,8 +23,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 99vw;
+    width: 100vw;
     position: fixed;
+    z-index: 1;
 }
 
 .logo {
@@ -64,61 +65,16 @@ nav ul li a:hover {
     border-bottom: 2px solid lightgreen;
 }
 .headlist.active {
-    background-color: darkblue;
+    background-color: green;
     border-radius: 5px;
     box-shadow: 4px 3px rgb(52, 35, 35);
 }
 .headlista {
     /* background-color: darkblue; */
     border-radius: 5px;
-    box-shadow: 4px 3px rgb(52, 35, 35);
+    box-shadow: 4px 3px lightgreen;
     position: relative; /* Needed for dropdown positioning */
 }
-
-/* Dropdown styles */
-/* .dropdown-content {
-
-    display:block;
-    float: left;
-    /* background-color: #f9f9f9; */
-    /* min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-} */
-
-/* .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    
-} */
-
-/* .dropdown:hover .dropdown-content {
-    display: block;
-    /* margin-right: 5%; */
-    /* background-color: #007bff; */
-    /* position:fixed;
-} */
-/* .dropbtn {
-    margin-right: 5%;
-} */
-/* .dropdown {
-    list-style: none;
-    width: fit-content;
-    /* padding-right: 40px; */
-/* } */
-/* .hide { */
-    /* float: right; */
-    /* margin-left: 70vw; */
-    /* position:absolute; */
-    /* background-color: yellowgreen;
-
-} */
 
 nav ul li a:hover {
     background-color: #ddd;
@@ -134,14 +90,15 @@ nav ul li a.active {
 main {
     margin: 0px;
     padding: 0px;
-    background-image: url("assets/images/download.jpg");
+    /* background-image: url("../images/raisehands.jpg"); */
+    /* background-color: tomato; */
 }
 
 .hero {
-    background-image:url("../images/human.jpg");
+    background-image:url("../images/smalltree.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    /* background-position: fixed; */
     background-position-y:bottom ;
     /* background-color: #007bff; */
     color: black;
@@ -149,7 +106,8 @@ main {
     margin-right: 0px;
     text-align: center;
     padding-top: 70px;
-    height: clamp(300px, 400px, 800px);
+    height: fit-content;
+    /* height: clamp(300px, 400px, 800px); */
 }
 
 .hero h2 {
@@ -199,13 +157,14 @@ section a {
     /* background-color: #ffc107; */
     display: grid;
     /* grid-template-columns: auto; */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
     font-size: clamp(17px, 50%, 20px);
     grid-auto-rows: auto;
     grid-template-rows: 100px;
     gap:20px;
     column-gap: 50px;
     justify-content: center;
+    min-width: 150px;
 }
 .h1program {
     grid-column-start: 1;
@@ -288,9 +247,10 @@ section a {
 /* FOOTER PAGE */
 
 footer {
-    background-color: #f0f0f0;
+    background-color: rgb(0, 40, 54);
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 footer p {
@@ -320,9 +280,9 @@ footer a {
 
 
 /* LIVE-TV############################################# */
-main {
+/* main {
     padding: 20px;
-}
+} */
 .upcoming-events{
     display: grid;
     /* background-color: #0056b3; */
@@ -401,6 +361,9 @@ section a:hover {
     background-repeat: no-repeat;   
     background-size: cover;
     background-position: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: #f0f0f0;
 }
 .program-list .program img {
     width: 100%;
@@ -511,7 +474,8 @@ section a:hover {
 /*service############################################## */
 .introservice{
     text-align: center;
-    height: 300px;
+    padding-top: 10%;
+    height: 400px;
     background-color: #0056b3;
     background-image: url("../images/human.jpg");
     background-repeat: no-repeat;
@@ -536,9 +500,11 @@ section a:hover {
 .carousel-container {
     margin-right: minmax(0%, 25%);
     margin-left: minmax(0%, 25%);
-    /* width: 80%; */
+    width: 80%;
+    /* margin: 25%; */
     /* max-width: 600px; */
     overflow: hidden;
+    z-index: 0;
     position: relative;
     border-radius: 10px;
     background-color: white;
@@ -570,7 +536,7 @@ section a:hover {
 /* SERVICE TESTIMONIAL DIVS */
 
 .service {
-    width: 45%;
+    width: fit-content;
     margin-bottom: 40px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -617,6 +583,7 @@ section a:hover {
 .testimonials {
     text-align: center;
     margin-bottom: 40px;
+    /* background-color: rebeccapurple; */
 }
 
 .testimonials blockquote {
@@ -950,9 +917,9 @@ section a:hover {
 
 /*signup############################################## */
 
-main {
+/* main {
     padding: 20px;
-}
+} */
 
 .signup-form {
     max-width: 600px;
@@ -1036,14 +1003,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 1px;
-    background-color: #0044cc;
+    background-color: #677da9;
      /* Change as needed */
 }
 
 /* Logo styling */
 .logo a {
     font-size: 24px;
-    color: white;
+    color: green;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
@@ -1098,7 +1065,7 @@ nav {
 
 /* Hover effects */
 .dropdown-content a:hover {
-    background-color: darkblue;
+    background-color: rgb(0, 40, 54);
     color: whitesmoke;
     font-weight: bold;
 }
@@ -1109,9 +1076,9 @@ nav {
 }
 
 /* Dropdown container hover effect */
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
     background-color: #0052cc;
-}
+} */
 
 
 /* Responsive adjustments */
@@ -1162,6 +1129,11 @@ nav {
         width: 95vw;
     }
 
+}
+@media (max-width: 1240px) {
+    .news {
+        border-right: 0px solid black;
+    }
 }
 /* MEDIA QUERIS.....MEDIA QUERIS.....MEDIA QUERIS */
 /* MEDIA QUERIS.....MEDIA QUERIS.....MEDIA QUERIS */
