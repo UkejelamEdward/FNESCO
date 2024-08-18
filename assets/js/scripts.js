@@ -52,3 +52,57 @@ showTestimonial(currentTestimonialIndex);
 
 // service testimonial divs
 
+// about us##################################################
+document.addEventListener("DOMContentLoaded", function() {
+  const missionText = document.getElementById('mission-text');
+  const visionText = document.getElementById('vision-text');
+  const heading = document.getElementById('mission-vision-heading');
+
+  function animateText(elementToShow, elementToHide, headingText) {
+      elementToHide.classList.remove('animated');
+      elementToHide.style.display = 'none';
+
+      setTimeout(() => {
+          heading.textContent = headingText;
+          elementToShow.classList.add('animated');
+          elementToShow.style.display = 'block';
+      }, 500);
+  }
+
+  function startAnimation() {
+      animateText(visionText, missionText, "Our Vision");
+      setTimeout(() => {
+          animateText(missionText, visionText, "Our Mission");
+      }, 14000); // 14 seconds delay (5s typing + 2s pause + 7s hiding)
+  }
+
+  startAnimation();
+  setInterval(startAnimation, 28000); // repeat every 28 seconds
+});
+// aboutus#######################################################################
+// aboutussmall#######################################################################
+document.addEventListener("DOMContentLoaded", function() {
+    const missionTextSmall = document.getElementById('mission-textsmall');
+    const visionTextSmall = document.getElementById('vision-textsmall');
+    const headingSmall = document.getElementById('mission-visionsmall-heading');
+
+    function toggleText() {
+        if (headingSmall.textContent === "Our Mission") {
+            headingSmall.textContent = "Our Vision";
+            missionTextSmall.classList.remove('active');
+            visionTextSmall.classList.add('active');
+        } else {
+            headingSmall.textContent = "Our Mission";
+            visionTextSmall.classList.remove('active');
+            missionTextSmall.classList.add('active');
+        }
+    }
+
+    // Initially show the mission text
+    missionTextSmall.classList.add('active');
+
+    // Toggle between the texts every 5 seconds
+    setInterval(toggleText, 5000);
+});
+
+// aboutussmall#######################################################################

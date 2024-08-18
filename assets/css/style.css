@@ -364,6 +364,7 @@ section a:hover {
     padding-top: 5%;
     padding-bottom: 5%;
     color: #f0f0f0;
+    /* height: 700px; */
 }
 .program-list .program img {
     width: 100%;
@@ -826,20 +827,28 @@ section a:hover {
 }
 
 .team {
-    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 10px;
     /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
+    justify-content: center;
     /* background-color: lawngreen; */
-    text-align: center;
+    /* text-align: center; */
 }
 .team h2 {
+    width: fit-content;
+    text-align: center;
+    /* position: absolute; */
+    justify-self:center;
+    grid-column: 1/-1;
     color: brown;
     /* background-color: #0056b3; */
     /* display: block; */
 }
 
 .team-member {
-    /* justify-content: center; */
+    justify-content: center;
+    justify-self: center;
     text-align: center;
     min-width: 150px;
     width: 350px;
@@ -865,11 +874,17 @@ section a:hover {
 .team-member p {
     margin-bottom: 5px;
 }
-
 .values ul {
     list-style-type: none;
     padding: 0;
+    /* background-color: #007bff; */
 }
+/* .values {
+    background-color: #0056b3;
+} */
+/* .history {
+    background-color: yellowgreen;
+} */
 
 .values ul li {
     margin-bottom: 10px;
@@ -912,7 +927,157 @@ section a:hover {
 .call-to-action .btn:hover {
     background-color: #0056b3;
 }
-/*about############################################## */
+
+/* about the vision and vision############################################## */
+/* about the vision and vision############################################## */
+.mission-vision {
+    /* background-color: rgba(1, 184, 1, 0.1); */
+    /* padding: 40px;uzxc */
+    margin-top: 150px; 
+    /* border-radius: 20px; */
+    /* max-width: fit-content; */
+    /* height: fit-content; */
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    /* margin-left: 0px; */
+    padding-left:0px;
+    display: grid;
+    gap: 10px;
+    /* width: fit-content; */
+    grid-template-columns: repeat(auto-fill);
+}
+
+#mission-vision-heading {
+    color: #fbbf24;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    /* margin-bottom: 50px; */
+    transition: color 0.5s ease-in-out;
+    /* margin-left: 0px; */
+    /* text-align: left; */
+    /* float: left; */
+    /* background-color: #000000; */
+    width: fit-content;
+    height: fit-content;
+    grid-column-start: 1;
+    grid-column-end:3;
+    /* display: block; */
+    /* position: absolute;  */ 
+}
+
+.text-container {
+    /* display: block; */
+    /* text-align: center; */
+    /* position: relative; */
+    /* margin: 0px; */
+    overflow: hidden;
+    /* float: left; */
+    /* background-color: #110d06; */
+    width: fit-content;
+}
+
+.mission-vision p {
+    /* background-color: #b69254; */
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    /* color: #ffffff; */
+    /* line-height: 1.8; */
+    /* margin: 20px 0; */
+    /* display: none; */
+    white-space:nowrap;
+    overflow: hidden;
+    /* margin-left: 0px; */
+    border-right: .15em solid orange;
+    /* width: fit-content; */
+}
+
+.mission-vision p.animated {
+    margin-left: 0px;
+    display: block;
+    animation: typing 5s steps(40, end) 0s forwards, pauseText 2s steps(1, end) 5s forwards, hideText 5s steps(40, end) 7s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes pauseText {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes hideText {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+.mission-visionsmall {
+    display: none;
+}
+
+.mission-vision strong {
+    /* margin-left: 0px; */
+    font-size: 1.5em;
+    color: #f59e0b;
+}
+@media (max-width: 700px) {
+    .mission-vision {
+        display: none;
+    }
+    .mission-visionsmall {
+        display: block;
+        margin-top: 25vw;
+        justify-self: self-end;
+    }
+    
+    .mission-visionsmall {
+        /* background-color: rgba(255, 255, 255, 0.1); */
+        /* padding: 40px; */
+        /* margin: 50px auto; */
+        border-radius: 20px;
+        width: fit-content;
+        text-align: left;
+        /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    }
+    
+    .mission-visionsmall h2 {
+        color: #fbbf24;
+        font-size: clamp(2rem, 2.5vw, 3rem);
+        margin-bottom: 30px;
+        transition: color 0.5s ease-in-out;
+    }
+    
+    .text-containersmall {
+        position: relative;
+    }
+    
+    .mission-visionsmall p {
+        font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+        color: #ffffff;
+        line-height: 1.8;
+        margin: 20px 0;
+        display: none; /* Initially hidden */
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .mission-visionsmall p.active {
+        display: block;
+    }    
+}
+
+
+/* about the vision and vision############################################## */
+/* about the vision and vision############################################## */
+/* about############################################## */
 
 
 /*signup############################################## */
