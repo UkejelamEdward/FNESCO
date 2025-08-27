@@ -237,13 +237,18 @@ section a {
 }
 .partimg {
     border-radius: 5px;
-    width: 150px;
+    width: 20%;
     align-self: center;
     margin: 20px 80px;
 
 }
 
-
+.partimg1{
+    width: 30%;
+    align-self: center;
+    margin: 40px 80px;
+    border-radius: 5px;
+}
 /* FOOTER PAGE */
 
 footer {
